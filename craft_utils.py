@@ -278,10 +278,10 @@ def getDetBoxes(textmap, linkmap, text_threshold, link_threshold, low_text,
 def getWordAndCharBoxes(image, textmap, linkmap, text_threshold, link_threshold,
         low_text, poly=False, use_cpp_bindings=True, fast_mode=False, rotated_box=True):
 
-    boxes, polys = getDetBoxes(
-            textmap, linkmap, text_threshold, link_threshold,
-            low_text, poly, use_cpp_bindings, fast_mode, rotated_box)
-
+    # boxes, polys = getDetBoxes(
+    #         textmap, linkmap, text_threshold, link_threshold,
+    #         low_text, poly, use_cpp_bindings, fast_mode, rotated_box)
+    boxes, polys = None, None
     char_boxes = getCharBoxes(image, textmap)
 
     return boxes, polys, char_boxes

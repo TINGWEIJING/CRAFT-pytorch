@@ -4,5 +4,7 @@
 *.pth
 result*
 weights*
+/annot
+/dataset
 
 cpp_bindings/build/**
